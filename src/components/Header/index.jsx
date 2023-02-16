@@ -4,9 +4,10 @@ import img from "../../assets/img/imagem_principal2.png"
 
 import { Container, Wrapper } from "./styles.js"
 
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 const Header = () => {
+  const navigate = useNavigate()
   return (
     <Container>
       <Wrapper>
@@ -20,7 +21,9 @@ const Header = () => {
           </div>
           <div>
             <span>Prontos para estudar muito?</span>
-            <Link to="/login">Começar agora</Link>
+            <button onClick={() => navigate("/login")} type="button">
+              Começar agora
+            </button>
           </div>
           <img src={img} alt="Mulher lendo um livro." />
         </div>

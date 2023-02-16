@@ -44,10 +44,7 @@ export const Wrapper = styled.div`
         line-height: 2.3rem;
       }
 
-      > a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      > button {
         padding-block: 2.4rem;
         width: 26.207rem;
         background: var(--color-1);
@@ -57,6 +54,7 @@ export const Wrapper = styled.div`
         font-size: 2.4rem;
         line-height: 2.3rem;
         color: var(--white);
+        cursor: pointer;
       }
     }
 
