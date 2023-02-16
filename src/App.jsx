@@ -12,9 +12,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Cadastro" element={<Cadastro />} />
-          <Route path="/Redefinir" element={<Redefinir />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/cadastro" element={<Cadastro />} />
+          <Route path="/redefinir" element={<Redefinir />} />
           <Route path="/*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>
