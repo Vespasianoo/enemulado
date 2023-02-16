@@ -41,7 +41,7 @@ export const DetermineHabilidades = styled.div`
 
   > p {
     font-size: 1.8rem;
-    font-weight: 2.1rem;
+    font-weight: 100;
     line-height: 2.1rem;
     text-align: justify;
     margin-bottom: 2.2rem;
