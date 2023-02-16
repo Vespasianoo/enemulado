@@ -20,12 +20,12 @@ const Login = () => {
               <input type="text" placeholder="Login" />
               <div className="input-box">
                 <input type="password" placeholder="Senha" />
-                <Link to="../Redefinir">Esqueci minha senha</Link>
+                <Link to="/redefinir">Esqueci minha senha</Link>
               </div>
             </div>
             <div className="btn">
               <Entrar type="button">Entrar</Entrar>
-              <Link to="../Cadastro" className="Criar">
+              <Link to="/cadastro" className="Criar">
                 Criar conta
               </Link>
             </div>

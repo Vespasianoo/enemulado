@@ -20,7 +20,7 @@ const Header = () => {
           </div>
           <div>
             <span>Prontos para estudar muito?</span>
-            <Link to="/Login">Começar agora</Link>
+            <Link to="/login">Começar agora</Link>
           </div>
           <img src={img} alt="Mulher lendo um livro." />
         </div>

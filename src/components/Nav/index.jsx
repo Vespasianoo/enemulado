@@ -20,7 +20,7 @@ const Nav = () => {
             <a href="pages/quemsomos/index.html">QUEM SOMOS</a>
           </li>
           <li>
-            <Link to="/Login">ENTRAR</Link>
+            <Link to="/login">ENTRAR</Link>
           </li>
         </ul>
       </Container>
