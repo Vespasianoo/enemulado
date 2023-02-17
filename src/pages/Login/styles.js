@@ -38,19 +38,6 @@ export const Wrapper = styled.div`
         span:last-child {
           text-align: center;
         }
-
-        > button {
-          width: 100%;
-          height: 4.8rem;
-          border: 1px solid var(--color-6);
-          border-radius: 10rem;
-
-          font-weight: 700;
-          font-size: 1.6rem;
-          color: #323232;
-          margin-bottom: 1.6rem;
-          cursor: pointer;
-        }
       }
       > .input-group {
         display: flex;
@@ -136,4 +123,23 @@ export const Entrar = styled.button`
   font-weight: 700;
   font-size: 1.6rem;
   letter-spacing: -2%;
+`
+
+export const GoogleLogin = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+  width: 100%;
+  height: 4.8rem;
+  border: 1px solid var(--color-6);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: -0.02em;
+
+  background-color: var(--white);
+  border-radius: 10rem;
+  cursor: pointer;
+  margin-bottom: 1.6rem;
 `
