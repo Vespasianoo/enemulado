@@ -43,14 +43,14 @@ const Login = () => {
               <span>ou</span>
             </div>
             <div className="input-group">
-              <input type="text" placeholder="Login" />
+              <input type="text" placeholder="Login" required />
               <div className="input-box">
-                <input type="password" placeholder="Senha" />
+                <input type="password" placeholder="Senha" required />
                 <Link to="/redefinir">Esqueci minha senha</Link>
               </div>
             </div>
             <div className="btn">
-              <Entrar type="button">Entrar</Entrar>
+              <Entrar type="submit">Entrar</Entrar>
               <Link to="/cadastro" className="Criar">
                 Criar conta
               </Link>
