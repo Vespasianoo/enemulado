@@ -4,7 +4,6 @@ import { Container } from "./styles.js"
 import { Link } from "react-router-dom"
 
 const Nav = () => {
-  const imgPerfil = "https://avatars.githubusercontent.com/u/104656939?v=4"
   return (
     <>
       <Container>
