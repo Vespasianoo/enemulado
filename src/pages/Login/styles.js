@@ -132,7 +132,7 @@ export const GoogleLogin = styled.button`
   gap: 3.5rem;
   width: 100%;
   height: 4.8rem;
-  border: 1px solid var(--color-6);
+  border: 0.1rem solid var(--color-6);
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.9rem;

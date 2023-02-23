@@ -5,6 +5,10 @@ import img from "../../assets/img/imagem_principal_login2.png"
 import { Container, Wrapper, GoogleLogin, Entrar } from "./styles"
 
 const Login = () => {
+  function handGoogleSignIn(event) {
+    console.log("kjfeiugfb")
+    event.preventDefault()
+  }
   return (
     <Container>
       <Wrapper>
@@ -13,7 +17,7 @@ const Login = () => {
           <form action="#">
             <div>
               <span>Entrar com:</span>
-              <GoogleLogin>
+              <GoogleLogin onClick={handGoogleSignIn}>
                 <svg
                   width="24"
                   height="24"
