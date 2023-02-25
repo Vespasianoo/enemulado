@@ -21,7 +21,7 @@ function AreaConhecimento() {
           </div>
           <div>
             <img src={molequinho} alt="" />
-            <span>MATEMATICA</span>
+            <span>MATEMÁTICA</span>
           </div>
           <div>
             <img src={livros} alt="" />
