@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes as Rotas, Route } from "react-router-dom"
 import Cadastro from "../pages/Cadastro"
 import Home from "../pages/Home"
 import Login from "../pages/Login"
@@ -9,11 +9,11 @@ import Simulados from "../pages/Simulados"
 
 import PrivateRoute from "./PrivateRoute"
 
-const Rotas = () => {
+const Routes = () => {
   return (
     <>
       <BrowserRouter>
-        <Routes>
+        <Rotas>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/cadastro" element={<Cadastro />} />
@@ -27,10 +27,10 @@ const Rotas = () => {
             }
           />
           <Route path="*" element={<Page404 />} />
-        </Routes>
+        </Rotas>
       </BrowserRouter>
     </>
   )
 }
 
-export default Rotas
+export default Routes

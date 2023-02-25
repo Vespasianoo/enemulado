@@ -1,10 +1,10 @@
-import Rotas from "./Routes/Rotas"
+import Routes from "./Routes"
 import GlobalStyles from "./styles/GlobalStyles"
 
 function App() {
   return (
     <>
-      <Rotas />
+      <Routes />
       <GlobalStyles />
     </>
   )
