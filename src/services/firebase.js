@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app"
-import { getAuth, GoogleAuthProvider } from "firebase/auth"
+import { getAuth } from "firebase/auth"
 const firebaseConfig = {
   apiKey: "AIzaSyDNJMNGl7dwYRHr0GLwX83oVIY-DsFFko4",
   authDomain: "enemulado-auth-2bf03.firebaseapp.com",

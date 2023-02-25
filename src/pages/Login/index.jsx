@@ -1,15 +1,29 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth"
+import { auth } from "../../services/firebase"
 
 import Nav from "../../components/Nav"
 import img from "../../assets/img/imagem_principal_login2.png"
 import { Container, Wrapper, GoogleLogin, Entrar } from "./styles"
 
 const Login = () => {
-  function signInWithGoogle(event) {
-    event.preventDefault()
-  }
+  const navigate = useNavigate()
+  const [user, setUser] = useState()
 
+  function signInWithGoogle() {
+    const provider = new GoogleAuthProvider()
+
+    signInWithPopup(auth, provider)
+      .then(result => {
+        console.log(result.user)
+        setUser(result.user)
+      })
+      .then(() => navigate("/"))
+      .catch(error => {
+        console.log(error)
+      })
+  }
   return (
     <Container>
       <Wrapper>
@@ -18,7 +32,7 @@ const Login = () => {
           <form action="#">
             <div>
               <span>Entrar com:</span>
-              <GoogleLogin onClick={signInWithGoogle}>
+              <GoogleLogin type="button" onClick={signInWithGoogle}>
                 <svg
                   width="24"
                   height="24"
