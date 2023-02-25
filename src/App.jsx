@@ -7,7 +7,7 @@ import Page404 from "./pages/Page404"
 import Redefinir from "./pages/Redefinir"
 import Simulados from "./pages/Simulados"
 
-import PrivateRoute from "./Routes/PrivateRoute"
+import PrivateRoute from "./Routes"
 import GlobalStyles from "./styles/GlobalStyles"
 
 function App() {
