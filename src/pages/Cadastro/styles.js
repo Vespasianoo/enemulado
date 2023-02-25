@@ -2,12 +2,12 @@ import styled from "styled-components"
 
 export const Container = styled.div`
   margin: 3.8rem auto 3.6rem auto;
-  padding-inline: 2.4rem;
 `
 export const Wrapper = styled.div`
   width: 100%;
   max-width: 119.829rem;
   margin-inline: auto;
+  padding-inline: 2.4rem;
 
   div {
     display: flex;

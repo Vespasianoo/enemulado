@@ -34,7 +34,7 @@ const Cadastro = () => {
               name="ConfirmPassword"
               required
             /> */}
-            <button onClick={handleSignOut}>Criar conta</button>
+            <button>Criar conta</button>
           </form>
           <img src={img} alt="" />
         </div>
