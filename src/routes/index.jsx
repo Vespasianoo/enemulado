@@ -29,6 +29,7 @@ const Routes = () => {
           <Route path="*" element={<Page404 />} />
         </Rotas>
       </BrowserRouter>
+      <GlobalStyles />
     </>
   )
 }
