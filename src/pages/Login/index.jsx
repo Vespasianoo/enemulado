@@ -1,14 +1,14 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+
 import Nav from "../../components/Nav"
 import img from "../../assets/img/imagem_principal_login2.png"
 import { Container, Wrapper, GoogleLogin, Entrar } from "./styles"
 
 const Login = () => {
-  // function handGoogleSignIn(event) {
-  //   console.log("kjfeiugfb")
-  //   event.preventDefault()
-  // }
+  function signInWithGoogle(event) {
+    event.preventDefault()
+  }
 
   return (
     <Container>
@@ -18,7 +18,7 @@ const Login = () => {
           <form action="#">
             <div>
               <span>Entrar com:</span>
-              <GoogleLogin>
+              <GoogleLogin onClick={signInWithGoogle}>
                 <svg
                   width="24"
                   height="24"
