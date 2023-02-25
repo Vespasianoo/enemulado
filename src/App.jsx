@@ -1,4 +1,4 @@
-import Rotas from "./Routes/index"
+import Rotas from "./Routes/Rotas"
 import GlobalStyles from "./styles/GlobalStyles"
 
 function App() {
