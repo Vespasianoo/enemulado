@@ -24,7 +24,7 @@ export default createGlobalStyle`
     body {
         font-size: 1.6rem;
         background: var(--bg-color);
-          overflow: overlay;
+        
     }
 
     body * {

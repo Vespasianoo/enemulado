@@ -67,7 +67,7 @@ export const Wrapper = styled.div`
 
   @media (max-width: 899px) {
     margin-top: 0;
-    padding-inline: 2.4rem;
+    padding-inline: 1.2rem;
 
     > div {
       display: flex;

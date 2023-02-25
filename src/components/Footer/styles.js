@@ -59,7 +59,8 @@ export const Wrapper = styled.div`
     }
   }
   @media (max-width: 899px) {
-    padding-inline: 2.4rem;
+    /* padding-inline: 2.4rem; */
+    padding-inline: 1.2rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;

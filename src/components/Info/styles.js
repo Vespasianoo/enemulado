@@ -39,7 +39,8 @@ export const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 2.4rem;
-    padding-inline: 2.4rem;
+    /* padding-inline: 2.4rem; */
+    padding-inline: 1.2rem;
   }
 
   @media (min-width: 900px) and (max-width: 1080px) {

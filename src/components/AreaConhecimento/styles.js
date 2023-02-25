@@ -29,11 +29,14 @@ export const Wrapper = styled.div`
       gap: 0.8rem;
       width: 24.304rem;
       height: 15.3rem;
+      padding: 1rem;
       background-color: var(--color-3);
       border-radius: 2rem;
 
       > img {
         filter: grayscale(1);
+        width: fit-content;
+        height: fit-content;
       }
       &:hover {
         background-color: var(--color-2);
@@ -41,7 +44,7 @@ export const Wrapper = styled.div`
           filter: grayscale(0);
         }
       }
-      &:nth-child(1) img {
+      /* &:nth-child(1) img {
         width: 10.5rem;
         height: 9.4rem;
       }
@@ -55,7 +58,7 @@ export const Wrapper = styled.div`
       &:nth-child(4) img {
         width: 10.9rem;
         height: 10.2rem;
-      }
+      } */
       > span {
         font-size: 1.8rem;
       }
@@ -64,7 +67,8 @@ export const Wrapper = styled.div`
 
   @media (max-width: 899px) {
     max-width: 41.4rem;
-    padding-inline: 2.4rem;
+    /* padding-inline: 2.4rem; */
+    padding-inline: 1.2rem;
     h2 {
       font-weight: 300;
       font-size: 2rem;
@@ -79,7 +83,6 @@ export const Wrapper = styled.div`
       div {
         width: 100%;
         text-align: center;
-        padding: 0.5rem;
 
         > span {
           font-size: 1.4rem;

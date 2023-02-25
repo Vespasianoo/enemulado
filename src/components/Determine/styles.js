@@ -19,6 +19,7 @@ export const Container = styled.div`
     justify-content: center;
     flex-direction: column;
     gap: 140px;
+    padding-inline: 1.2rem;
   }
 `
 
