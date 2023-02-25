@@ -3,7 +3,6 @@ import styled from "styled-components"
 // Trocar font
 export const Container = styled.div`
   margin: 3.8rem auto 3.6rem auto;
-  padding-inline: 2.4rem;
 `
 
 export const Wrapper = styled.div`
@@ -11,6 +10,7 @@ export const Wrapper = styled.div`
   max-width: 119.829rem;
   margin-inline: auto;
 
+  padding-inline: 2.4rem;
   * {
     font-family: "Inter", sans-serif;
   }
