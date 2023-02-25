@@ -7,8 +7,9 @@ export const Wrapper = styled.div`
   width: 100%;
   max-width: 119.829rem;
   margin-inline: auto;
-  padding-inline: 2.4rem;
-
+  @media (min-width: 900px) and (max-width: 1080px) {
+    padding-inline: 2.4rem;
+  }
   div {
     display: flex;
     justify-content: space-between;
