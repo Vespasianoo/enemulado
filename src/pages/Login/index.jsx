@@ -19,7 +19,7 @@ const Login = () => {
         console.log(result.user)
         setUser(result.user)
       })
-      .then(() => navigate("/"))
+      .then(() => navigate("/")) //trocar apos concluir o auth para DASHBOARD
       .catch(error => {
         console.log(error)
       })

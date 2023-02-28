@@ -1,9 +1,11 @@
 import React from "react"
 import img from "../../assets/img/logo.png"
+import ImgPerfil from "../ImgPerfil"
 import { Container } from "./styles.js"
 import { Link } from "react-router-dom"
 
 const Nav = () => {
+  const user = true
   return (
     <>
       <Container>
@@ -19,9 +21,7 @@ const Nav = () => {
           <li>
             <a href="pages/quemsomos/index.html">QUEM SOMOS</a>
           </li>
-          <li>
-            <Link to="/login">ENTRAR</Link>
-          </li>
+          <li>{user ? <ImgPerfil /> : <Link to="/login">ENTRAR</Link>}</li>
         </ul>
       </Container>
     </>
