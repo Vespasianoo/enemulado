@@ -27,7 +27,7 @@ export const Container = styled.div`
   }
 `
 
-export const Perfil = styled.div`
+export const PerfilAluno = styled.div`
   width: 8.9rem;
   height: 8.9rem;
   border-radius: 50%;
