@@ -17,7 +17,9 @@ export const Container = styled.div`
   > img {
     height: max-content;
     width: max-content;
+    filter: grayscale(1);
   }
+
   > span {
     font-size: 1.8rem;
   }

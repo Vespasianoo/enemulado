@@ -25,9 +25,16 @@ const Simulados = () => {
 
             <div className="first">
               <h2>PRIMEIRO DIA</h2>
-              <div>
+              <div className="simu">
                 <Simulado img={mundo} text={"CIÊNCIAS HUMANAS"} />
                 <Simulado img={livros} text={"LINGUAGENS E CÓDIGOS"} />
+              </div>
+            </div>
+            <div className="first">
+              <h2>SEGUNDO DIA</h2>
+              <div className="simu">
+                <Simulado img={professor} text={"CIÊNCIAS DA NATUREZA"} />
+                <Simulado img={molequinho} text={"MATEMÁTICA"} />
               </div>
             </div>
           </LeftSide>
