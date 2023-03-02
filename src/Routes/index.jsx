@@ -9,8 +9,6 @@ import Redefinir from "../pages/Redefinir"
 import Simulados from "../pages/Simulados"
 import Dashboard from "../pages/Dashboard"
 
-// import { AuthProvider } from "./context/auth"
-// import Nav from "./components/Nav"
 export const AppRouter = () => {
   return (
     <Router>

@@ -1,8 +1,16 @@
+import { useState } from "react"
+
 import Nav from "../../components/Nav"
 import img from "../../assets/img/imagem_principal_cadastro2.png"
 import { Container, Wrapper } from "./styles"
 
 const Cadastro = () => {
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [cpf, setCpf] = useState("")
+  const [password, setPassword] = useState("")
+  const [confirmPassword, setConfirmPassword] = useState("")
+
   return (
     <Container>
       <Wrapper>
@@ -46,12 +54,13 @@ const Cadastro = () => {
               onChange={e => setPassword(e.target.value)}
               required
             />
-            {/* <input
+            <input
               type="password"
               placeholder="Confirmar senha"
               name="ConfirmPassword"
               required
-            /> */}
+              onChange={e => setConfirmPassword(e.target.value)}
+            />
             <button type="submit">Criar conta</button>
           </form>
           <img src={img} alt="" />
