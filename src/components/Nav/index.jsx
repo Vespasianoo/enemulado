@@ -19,7 +19,7 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <a href="pages/quemsomos/index.html">QUEM SOMOS</a>
+            <Link to={"/quemsomos"}>QUEM SOMOS</Link>
           </li>
           <li>{user ? <ImgPerfil /> : <Link to="/login">ENTRAR</Link>}</li>
         </ul>

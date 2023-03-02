@@ -8,12 +8,14 @@ import Page404 from "../pages/Page404"
 import Redefinir from "../pages/Redefinir"
 import Simulados from "../pages/Simulados"
 import Dashboard from "../pages/Dashboard"
+import QuemSomos from "../pages/Quemsomos"
 
 export const AppRouter = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="quemsomos" element={<QuemSomos />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/redefinir" element={<Redefinir />} />

@@ -1,29 +1,11 @@
-import React, { useState } from "react"
-import { Link, useNavigate } from "react-router-dom"
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth"
-import { auth } from "../../services/firebase"
+import React from "react"
+import { Link } from "react-router-dom"
 
 import Nav from "../../components/Nav"
 import img from "../../assets/img/imagem_principal_login2.png"
 import { Container, Wrapper, GoogleLogin, Entrar } from "./styles"
 
 const Login = () => {
-  const navigate = useNavigate()
-  const [user, setUser] = useState()
-
-  function signInWithGoogle() {
-    const provider = new GoogleAuthProvider()
-
-    signInWithPopup(auth, provider)
-      .then(result => {
-        console.log(result.user)
-        setUser(result.user)
-      })
-      .then(() => navigate("/")) //trocar apos concluir o auth para DASHBOARD
-      .catch(error => {
-        console.log(error)
-      })
-  }
   return (
     <Container>
       <Wrapper>
@@ -32,7 +14,7 @@ const Login = () => {
           <form action="#">
             <div>
               <span>Entrar com:</span>
-              <GoogleLogin type="button" onClick={signInWithGoogle}>
+              <GoogleLogin type="button">
                 <svg
                   width="24"
                   height="24"
