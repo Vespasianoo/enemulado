@@ -10,4 +10,8 @@ export const Container = styled.div`
     padding-left: 1.6rem;
     outline: none;
   }
+
+  > input[readOnly] {
+    background-color: gray;
+  }
 `
