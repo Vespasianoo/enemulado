@@ -13,6 +13,19 @@ export const Container = styled.div`
     gap: 4rem;
     margin-bottom: 4.9rem;
   }
+
+  @media (min-width: 900px) and (max-width: 1080px) {
+    padding-inline: 2.4rem;
+  }
+  @media (max-width: 899px) {
+    padding-inline: 1.5rem;
+    max-width: 412px;
+    > header {
+      grid-template-columns: 1fr;
+      gap: 2.8rem;
+      margin-bottom: 7.2rem;
+    }
+  }
 `
 export const Left = styled.div`
   > h1 {
@@ -26,8 +39,34 @@ export const Left = styled.div`
     font-size: 3.6rem;
     line-height: 4.2rem;
   }
+  @media (min-width: 900px) and (max-width: 1080px) {
+    h1 {
+      font-size: 3.8rem;
+    }
+  }
+  @media (max-width: 899px) {
+    > h1 {
+      font-size: 2rem;
+      line-height: 2.3rem;
+      margin-bottom: 2.2rem;
+    }
+    > p {
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+      text-align: justify;
+    }
+  }
 `
-export const Right = styled.div``
+export const Right = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > img {
+    @media (max-width: 899px) {
+      width: 263px;
+    }
+  }
+`
 export const Bottom = styled.section`
   margin-bottom: 10.8rem;
   > h2 {
@@ -35,6 +74,20 @@ export const Bottom = styled.section`
     font-size: 4.8rem;
     line-height: 5.6rem;
     margin-bottom: 8.2rem;
+  }
+  @media (min-width: 900px) and (max-width: 1080px) {
+    h2 {
+      font-size: 3.8rem;
+    }
+  }
+  @media (max-width: 899px) {
+    margin-bottom: 4.4rem;
+    > h2 {
+      font-size: 2rem;
+      line-height: 2.3rem;
+      text-align: center;
+      margin-bottom: 2.8rem;
+    }
   }
 `
 
@@ -46,6 +99,14 @@ export const List = styled.ol`
     font-weight: 100;
     font-size: 3.6rem;
     line-height: 4.2rem;
+    text-align: justify;
+  }
+  @media (max-width: 899px) {
+    gap: 2.5rem;
+    > li {
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+    }
   }
 `
 export const Time = styled.div`
@@ -60,9 +121,23 @@ export const Time = styled.div`
     display: flex;
     justify-content: space-between;
   }
+  @media (min-width: 900px) and (max-width: 1080px) {
+    h2 {
+      font-size: 3.8rem;
+    }
+  }
+  @media (max-width: 899px) {
+    > h2 {
+      font-size: 2rem;
+      line-height: 2.3rem;
+    }
+  }
 `
 export const Person = styled.div`
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   > div {
     width: 36.5rem;
     height: 36.5rem;
@@ -77,7 +152,21 @@ export const Person = styled.div`
   > span {
     display: block;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+  @media (max-width: 899px) {
+    > div {
+      width: 10rem;
+      height: 10rem;
+    }
+    > strong {
+      font-size: 10px;
+      line-height: 12px;
+    }
+    > span {
+      font-size: 8px;
+      line-height: 9px;
+    }
   }
 `
