@@ -13,9 +13,7 @@ export const Wrapper = styled.div`
   @media (min-width: 900px) and (max-width: 1080px) {
     padding-inline: 2.4rem;
   }
-  * {
-    font-family: "Inter", sans-serif;
-  }
+
   > div {
     display: flex;
     justify-content: space-between;

@@ -11,7 +11,13 @@ const Cadastro = () => {
           <form action="#">
             <h1>Crie sua conta, é gratis!</h1>
 
-            {/* <input type="text" placeholder="Nome" name="name" required /> */}
+            <input
+              type="text"
+              placeholder="Nome"
+              name="name"
+              required
+              onChange={e => setName(e.target.value)}
+            />
             <input
               type="email"
               placeholder="E-mail"
@@ -19,8 +25,20 @@ const Cadastro = () => {
               onChange={e => setEmail(e.target.value)}
               required
             />
-            {/* <input type="text" placeholder="CPF" name="cpf" required /> */}
-            {/* <input type="number" placeholder="Telefone" name="telefone" /> */}
+
+            <input
+              type="text"
+              placeholder="CPF"
+              name="cpf"
+              required
+              onChange={e => setCpf(e.target.value)}
+            />
+            <input
+              type="number"
+              placeholder="Telefone"
+              name="telefone"
+              readOnly
+            />
             <input
               type="password"
               placeholder="Senha"
@@ -34,7 +52,7 @@ const Cadastro = () => {
               name="ConfirmPassword"
               required
             /> */}
-            <button>Criar conta</button>
+            <button type="submit">Criar conta</button>
           </form>
           <img src={img} alt="" />
         </div>
