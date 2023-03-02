@@ -43,14 +43,6 @@ export const Wrapper = styled.div`
         display: flex;
         flex-direction: column;
         gap: 1.6rem;
-        > input {
-          height: 4.8rem;
-          border: 1px solid var(--color-6);
-          padding-left: 1.6rem;
-          width: 100%;
-          outline: none;
-          border-radius: 0.6rem;
-        }
 
         > .input-box {
           display: flex;
@@ -64,6 +56,7 @@ export const Wrapper = styled.div`
             height: 100%;
             width: 100%;
             outline: none;
+            border-radius: 0.6rem;
           }
           > a {
             font-weight: 400;

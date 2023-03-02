@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
+import Input from "../../components/Form/Input"
 import Nav from "../../components/Nav"
 import img from "../../assets/img/imagem_principal_login2.png"
 import { Container, Wrapper, GoogleLogin, Entrar } from "./styles"
@@ -44,7 +45,7 @@ const Login = () => {
               <span>ou</span>
             </div>
             <div className="input-group">
-              <input type="text" placeholder="Login" required />
+              <Input type="text" placeholder="Login" required={true} />
               <div className="input-box">
                 <input type="password" placeholder="Senha" required />
                 <Link to="/redefinir">Esqueci minha senha</Link>

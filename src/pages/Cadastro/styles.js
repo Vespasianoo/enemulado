@@ -14,6 +14,7 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     > form {
+      width: 100%;
       max-width: 312px;
 
       > h1 {
@@ -25,16 +26,21 @@ export const Wrapper = styled.div`
         margin-bottom: 2.4rem;
       }
 
-      > input {
-        height: 4.8rem;
-        width: 100%;
-        border: 1px solid var(--color-6);
-        border-radius: 0.6rem;
+      > div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
         margin-bottom: 1.6rem;
-        padding-left: 1.6rem;
-        outline: none;
+        > input {
+          height: 4.8rem;
+          width: 100%;
+          border: 1px solid var(--color-6);
+          border-radius: 0.6rem;
+          margin-bottom: 1.6rem;
+          padding-left: 1.6rem;
+          outline: none;
+        }
       }
-
       > button {
         height: 4.8rem;
         width: 100%;
