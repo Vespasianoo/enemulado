@@ -8,7 +8,7 @@ import Page404 from "../pages/Page404"
 import Redefinir from "../pages/Redefinir"
 import Simulados from "../pages/Simulados"
 import Dashboard from "../pages/Dashboard"
-import QuemSomos from "../pages/Quemsomos"
+import QuemSomos from "../pages/QuemSomos"
 
 import { PrivateRoute } from "./privateRoutes"
 
