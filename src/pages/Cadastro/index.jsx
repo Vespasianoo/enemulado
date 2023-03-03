@@ -3,7 +3,7 @@ import { useState } from "react"
 import { api } from "../../services/api"
 import { useContext } from "react"
 import { AuthContext } from "../../context/AuthContext"
-import { useNavigate } from "react-router-dom"
+import { Navigate, useNavigate } from "react-router-dom"
 
 import Nav from "../../components/Nav"
 import img from "../../assets/img/imagem_principal_cadastro2.png"
@@ -23,7 +23,7 @@ const Cadastro = () => {
       password
     }
     const response = await api.post("/create", data)
-    console.log(response.data)
+    // console.log(response.data)
     if (response.data.error) {
       alert(response.data.error)
     }

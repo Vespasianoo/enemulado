@@ -21,7 +21,7 @@ const Login = () => {
     }
     await signIn(data)
   }
-  console.log(signed)
+  // console.log(signed)
 
   if (!signed) {
     return (
