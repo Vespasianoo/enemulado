@@ -21,7 +21,12 @@ const Cadastro = () => {
       email,
       password
     }
-    await api.post("/create", data)
+    const response = await api.post("/create", data)
+    console.log(response.data)
+    if (response.data.error) {
+      return alert(response.data.error)
+    }
+    alert("Usuário cadastrado com sucesso!")
   }
   if (!signed) {
     return (
