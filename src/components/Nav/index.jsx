@@ -1,11 +1,14 @@
 import React from "react"
+import { useContext } from "react"
+import { AuthContext } from "../../context/AuthContext"
 import img from "../../assets/img/logo.png"
 import ImgPerfil from "../ImgPerfil"
 import { Container } from "./styles.js"
 import { Link } from "react-router-dom"
 
 const Nav = () => {
-  const user = false
+  const { user } = useContext(AuthContext)
+
   return (
     <>
       <Container>
