@@ -1,5 +1,7 @@
 import React from "react"
+import { useContext } from "react"
 import { useNavigate } from "react-router-dom"
+import { AuthContext } from "../../context/AuthContext"
 import logo from "../../assets/img/logo_rodape.png"
 import imgMyPerfil from "../../assets/img/perfil.png"
 import imgMyDashboard from "../../assets/img/dash.png"
@@ -8,6 +10,7 @@ import { Container, Top, MyPerfil, MyDashboard, Bottom } from "./styles"
 
 function LeftSidePerfil() {
   const navigate = useNavigate()
+  const { singOut } = useContext(AuthContext)
   return (
     <Container>
       <Top>
@@ -22,7 +25,7 @@ function LeftSidePerfil() {
           <span>DASHBOARD</span>
         </MyDashboard>
       </Top>
-      <Bottom>
+      <Bottom onClick={singOut}>
         <img src={sair} />
         <span>Sair</span>
       </Bottom>

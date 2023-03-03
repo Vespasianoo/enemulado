@@ -36,9 +36,12 @@ export const Wrapper = styled.div`
           width: 100%;
           border: 1px solid var(--color-6);
           border-radius: 0.6rem;
-          margin-bottom: 1.6rem;
           padding-left: 1.6rem;
           outline: none;
+
+          &[readOnly] {
+            background: gray;
+          }
         }
       }
       > button {
