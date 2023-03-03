@@ -3,13 +3,14 @@ import { useState } from "react"
 import { api } from "../../services/api"
 import { useContext } from "react"
 import { AuthContext } from "../../context/AuthContext"
-import { Navigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 import Nav from "../../components/Nav"
 import img from "../../assets/img/imagem_principal_cadastro2.png"
 import { Container, Wrapper } from "./styles"
 
 const Cadastro = () => {
+  const navigate = useNavigate()
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [name, setName] = useState("")
@@ -24,9 +25,10 @@ const Cadastro = () => {
     const response = await api.post("/create", data)
     console.log(response.data)
     if (response.data.error) {
-      return alert(response.data.error)
+      alert(response.data.error)
     }
     alert("Usuário cadastrado com sucesso!")
+    return navigate("/login")
   }
   if (!signed) {
     return (

@@ -7,7 +7,7 @@ import { Container } from "./styles"
 const ImgPerfil = () => {
   const navigate = useNavigate()
   return (
-    <Container onClick={() => navigate("/perfil")}>
+    <Container onClick={() => navigate("/dashboard")}>
       <img src={imgPerfil} alt="Foto de Perfil" />
     </Container>
   )
