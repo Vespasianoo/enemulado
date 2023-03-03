@@ -43,7 +43,15 @@ export const Wrapper = styled.div`
         display: flex;
         flex-direction: column;
         gap: 1.6rem;
+        > input {
+          height: 4.8rem;
+          padding-inline: 1.6rem;
 
+          width: 100%;
+          outline: none;
+          border-radius: 0.6rem;
+          border: 1px solid var(--color-6);
+        }
         > .input-box {
           display: flex;
           align-items: center;
